@@ -18,3 +18,26 @@ $(document).ready(function() {
         $(".stream3").addClass('highlight_stream');
    });
 }); 
+
+$(document).ready(function() {
+    $(".bottom_button").on("mouseenter", function() {
+        $("body").css("background-color", "black");
+    });
+    $(".bottom_button").on("mouseleave", function() {
+        $("body").css("background-color", "grey");
+    });
+});
+
+$(document).ready(function() {
+    $("p").on("click", function() {
+        $("p").css("color", "red");
+    });
+    $("h2").mouseenter(function() {
+        $("h2").css("background-color", "light-blue")
+    });
+    $("h2").mouseenter(function() {
+        $(this).css("font-size", "24px")
+    });
+});
+
+
