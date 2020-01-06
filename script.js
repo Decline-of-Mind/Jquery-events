@@ -17,14 +17,19 @@ $(document).ready(function() {
         $(".stream3").removeClass('highlight_stream');
         $(".stream3").addClass('highlight_stream');
    });
+   $("#firstbtn").on("click", function() {
+       $("#firstp").slideToggle('fast');
+   });
 }); 
 
 $(document).ready(function() {
     $(".bottom_button").on("mouseenter", function() {
         $("body").css("background-color", "black");
+        $(this).fadeTo("fast", 0.5);
     });
     $(".bottom_button").on("mouseleave", function() {
         $("body").css("background-color", "grey");
+        $(this).fadeTo("fast", 1);
     });
 });
 
