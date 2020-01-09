@@ -17,7 +17,12 @@ $(document).ready(function () {
         $(".stream3").removeClass('highlight_stream');
         $(".stream3").addClass('highlight_stream');
     });
-
+    $("#select").on("click", function(){
+        $(".card").not(".highlight_stream").hide();
+    });
+    $("#all").on("click", function(){
+        $(".card").show();
+    });
 });
 
 $(document).ready(function () {
